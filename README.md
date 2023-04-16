@@ -1,7 +1,7 @@
 # SDIS80 - Service Départemental d'Incendie et de Secours
 - Repository de stage
 - Auteur : [Hugo Tabary](https://github.com/HugoTby)
-- Brevet de Technicien Supérieur, Systèmes Numérique, spécialité : Informatique et Réseaux (BTS SN-IR A), <br>[Lycée La Providence Amiens](https://www.la-providence.net/fr/)
+- Brevet de Technicien Supérieur, Systèmes Numériques, spécialité : Informatique et Réseaux (BTS SN-IR A), <br>[Lycée La Providence Amiens](https://www.la-providence.net/fr/)
 
 <p align="center">
   <a href="https://www.sdis80.fr">
