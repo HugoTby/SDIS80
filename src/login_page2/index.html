@@ -80,6 +80,7 @@
     }
 
     #submitbutton {
+        cursor: pointer;
         border-radius: 3px;
         border: none;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -105,7 +106,7 @@
                                         <font size="5">
                                             <b>
                                                 <i>
-                                                    Affichage dynamique des CIS
+                                                    Réinitialisation d'un mot de passe
                                                 </i>
                                             </b>
                                         </font>
@@ -119,16 +120,15 @@
                                         <font>
                                             <p>
 
-                                                Vous souhaitez acc&eacute;der &agrave; un service qui n&eacute;cessite
-                                                une authentification.
+                                                Vous souhaitez modifier votre mot de passe utilisateur ?
 
                                             </p>
                                         </font>
 
                                         <font>
                                             <p>
-                                                Entrez votre nom d'utilisateur et votre mot de passe puis cliquez sur le
-                                                bouton <b>Connexion</b> ci-dessous pour continuer.
+                                                Entrez votre nom d'utilisateur et votre nouveau mot de passe puis cliquez sur le
+                                                bouton <b>Modifier</b> ci-dessous pour continuer.
                                             </p>
                                         </font>
 
@@ -154,21 +154,23 @@
                                                                     </font>
                                                                 </td>
                                                                 <td>
-                                                                    <input class="textinput" type="password" name="password" value="" maxlength="12"autocomplete="off">
+                                                                    <input class="textinput" type="password" name="password" value="" maxlength="30"autocomplete="off" required>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="2" align="left">
-                                                                    <!-- <input type="checkbox" name="warn" value="true" /> -->
-                                                                    <small>
-                                                                        <small>Vous serez d&eacute;connect&eacute; si vous quittez l'application</small>
-                                                                    </small>
+                                                                <td nowrap>
+                                                                    <!-- <font>
+                                                                        <b>Mot de passe&nbsp;:</b>
+                                                                    </font> -->
+                                                                </td>
+                                                                <td>
+                                                                    <input class="textinput" type="password" name="password" value="" maxlength="30"autocomplete="off" required>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="2" align="right">
                                                                     <input type="hidden" name="lt" value="LT" />
-                                                                    <input id="submitbutton" type="submit" value="Connexion">
+                                                                    <input id="submitbutton" type="submit" value="Modifier">
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -186,8 +188,7 @@
                                                     <b>
                                                         Pour des raisons de s&eacute;curit&eacute;, fermez votre
                                                         navigateur web
-                                                        apr&egrave;s avoir acc&eacute;d&eacute; aux services
-                                                        prot&eacute;g&eacute;s&nbsp;!
+                                                        apr&egrave;s avoir chang&eacute; votre mot de passe !
                                                     </b>
                                                 </i>
                                             </font>
@@ -198,19 +199,19 @@
                                     <td colspan="2">
                                         <div class="erreur">
                                             <p>
-                                            <h1 style="color:black">Le nom d'utilisateur ou le password est incorrect<h1>
-                                                    </p>
+                                                <h1 style="color:black">Le nom d'utilisateur saisi est incorrect<h1>
+                                            </p>
                                         </div>
                                     </td>-->
                                     
-                                    <!--
-                                    <td colspan="2">
+                                    
+                                    <!-- <td colspan="2">
                                         <div class="erreur">
                                             <p>
-                                            <h1 style="color:black">Vous n'avez pas la permission d'accèder à cette ressource<h1>
-                                                    </p>
+                                                <h1 style="color:black">Erreur dans la confirmation du nouveau mot de passe<h1>
+                                            </p>
                                         </div>
-                                    </td>-->
+                                    </td> -->
                                 </tr>
                             </table>
                         </td>
@@ -221,5 +222,4 @@
     </table>
     </form>
 </body>
-
 </html>
